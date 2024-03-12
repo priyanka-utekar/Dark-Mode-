@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode</title>
+</head>
+
+<style>
+body{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding: 40px;
+}
+
+p{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    border-radius: 50%;
+}
+
+img{
+    height: 50px;
+    width: 100px;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+</style>
+<body>
+    <div class="wrapper">
+        <h1>Mode change Light to Dark</h1>
+        <p>Click the button to toggle between dark and light mode</p>
+         <button onclick="myFunction()">
+            <img src="idea.png" alt="">
+        </button>
+    </div>
+
+    <script>
+function myFunction() {
+    let element = document.body;
+    element.classList.toggle("dark-mode")
+}
+    </script>
+</body>
+</html>
